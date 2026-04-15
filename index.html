@@ -1,193 +1,330 @@
 <!DOCTYPE html>
 <html lang="uz">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   skills
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <title>Document</title>
 </head>
+
 <body>
-    <section class="skills-contact">
-  <div class="container">
-    
-    <!-- OUR SKILLS -->
-    <div class="skills-top">
-      <div class="skills-left">
-        <h2>OUR SKILLS</h2>
-
-        <div class="skill-item">
-          <div class="skill-head">
-            <span>GRAPHIC DESIGN</span>
-            <span>80%</span>
-          </div>
-          <div class="skill-line">
-            <div class="skill-fill w-80"></div>
-          </div>
-        </div>
-
-        <div class="skill-item">
-          <div class="skill-head">
-            <span>LEAD GENERATION</span>
-            <span>41%</span>
-          </div>
-          <div class="skill-line">
-            <div class="skill-fill w-41"></div>
-          </div>
-        </div>
-
-        <div class="skill-item">
-          <div class="skill-head">
-            <span>PHOTOSHOP</span>
-            <span>70%</span>
-          </div>
-          <div class="skill-line">
-            <div class="skill-fill w-70"></div>
-          </div>
-        </div>
-
-        <div class="skill-item">
-          <div class="skill-head">
-            <span>ILLUSTRATION</span>
-            <span>100%</span>
-          </div>
-          <div class="skill-line">
-            <div class="skill-fill w-100"></div>
-          </div>
-        </div>
-
-        <p class="skills-note">
-          * Companies we've helped build their website with Görm
-        </p>
+  <!-- Azamat -->
+  <header>
+    <div class="nav-left">
+      <div class="logo">Ö</div>
+      <div class="info-text hide-mobile">
+        BRANDING & <br> DESIGN STUDIO
       </div>
-
-      <div class="skills-right">
-        <img src="img/ourskills_img.png" alt="Our Skills Image">
+      <div class="info-text hide-mobile">
+        DOUBLE BAY 2028, <br> NEW YORK
       </div>
     </div>
 
-    <!-- FUN FACTS -->
-    <div class="fun-facts">
-      <h3>FUN FACTS</h3>
-
-      <div class="facts-grid">
-        <div class="fact-item">
-          <img src="img/lampochka.png" alt="Lampochka">
-          <div class="fact-text">
-            <h4>10</h4>
-            <p>Years on market</p>
-          </div>
-        </div>
-
-        <div class="fact-item">
-          <img src="img/like.png" alt="Like">
-          <div class="fact-text">
-            <h4>340+</h4>
-            <p>Project done</p>
-          </div>
-        </div>
-
-        <div class="fact-item">
-          <img src="img/odam.png" alt="Odam">
-          <div class="fact-text">
-            <h4>17</h4>
-            <p>Hero's member</p>
-          </div>
-        </div>
-
-        <div class="fact-item">
-          <img src="img/kofe.png" alt="Kofe">
-          <div class="fact-text">
-            <h4>900+</h4>
-            <p>Cups of coffee</p>
-          </div>
-        </div>
+    <div class="nav-center">
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
 
-    <!-- CONTACT US -->
-    <div class="contact-section">
-      <div class="contact-image">
-        <img src="img/contact_img.png" alt="Contact Image">
+    <div class="nav-right">
+      <div class="cart">
+        <img src="img/store.png" alt="">
+        <span>0</span>
       </div>
-
-      <div class="contact-form-box">
-        <h2>CONTACT US</h2>
-
-        <form class="contact-form">
-          <input type="text" placeholder="Name*">
-          <input type="email" placeholder="Email*">
-          <input type="text" placeholder="Website URL*">
-          <textarea placeholder="Project Details*"></textarea>
-          <button class="btn_contact" type="submit">SEND PROPOSAL</button>
-        </form>
-      </div>
+      <button class="contact-btn">CONTACT US</button>
     </div>
+  </header>
 
+  <div class="mobile-menu" id="mobileMenu">
+    <span class="close-menu" id="closeMenu">&times;</span>
+    <nav>
+      <a href="#">HOME</a>
+      <a href="#">ABOUT</a>
+      <a href="#">SERVICES</a>
+      <a href="#">WORK</a>
+      <a href="#">CONTACT</a>
+    </nav>
   </div>
-</section>
-  
-    <title>Görm Dizayn</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
-    <section class="blog-section">
-        <h2 class="section-title">FROM BLOG</h2>
-        <div class="blog-container">
-            <div class="blog-card">
-                <img src="/branding_test/img/blog_img_1.png" alt="Workplace">
-                <div class="card-content">
-                    <span class="badge marketing">MARKETING</span>
-                    <h3>CURATING A WORKPLACE THAT INSPIRES ALL OF US</h3>
-                    <a href="#" class="read-more">READ MORE</a>
-                </div>
-            </div>
-            <div class="blog-card">
-                <img src="/branding_test/img/blog_img_2.png" alt="Designers">
-                <div class="card-content">
-                    <span class="badge design">DESIGN</span>
-                    <h3>DESIGNERS WHO CHANGED THE WEB WITH WEBFLOW</h3>
-                    <a href="#" class="read-more">READ MORE</a>
-                </div>
-            </div>
+
+  <main class="hero-section">
+    <h1 class="hero-title">
+      BRANDING & <br>
+      DIGITAL DESIGN <br>
+      SUTDIO.
+    </h1>
+
+    <div class="social-sidebar hide-mobile">
+      <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+      <a href="#"><i class="fab fa-dribbble"></i> Dribbble</a>
+    </div>
+
+    <div class="scroll-icon">
+      <div class="mouse"></div>
+    </div>
+
+    <div class="next-arrow">
+      <i class="fa-solid fa-arrow-right"></i>
+    </div>
+  </main>
+
+  <section class="about-section">
+    <div class="image-grid">
+      <div class="img-container left-img">
+        <img src="img/main_img_1.png" alt="Creative team working">
+      </div>
+
+      <div class="play-showreel">
+        <svg viewBox="0 0 100 100">
+          <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none" />
+          <text>
+            <textPath xlink:href="#circlePath">PLAY SHOWREEL PLAY SHOWREEL</textPath>
+          </text>
+        </svg>
+        <div class="play-icon">▶</div>
+      </div>
+
+      <div class="img-container right-img">
+        <img src="img/main_img_2.png" alt="Team meeting">
+      </div>
+    </div>
+
+    <div class="content-split">
+      <h2 class="section-title">WE'RE A <br> CREATIVE <br> DIGITAL <br> STUDIO</h2>
+      <div class="description">
+        <p>We are a forward-thinking team of designers <br> and developers driven by passion — and fuelled <br> by
+          curiosity.</p>
+        <p>We believe that the human dimensions <br> essential to start any successful project and <br> that this is
+          where
+          splendid emotional <br> relationships between the company and <br> people are born.</p>
+        <button class="team-btn">MEET THE TEAM</button>
+      </div>
+    </div>
+
+    <div class="partners-section">
+      <p class="partners-title">TEAMS AND COMPANIES WE WORK WITH</p>
+      <div class="logo-grid">
+        <div class="logo-grid-img1">
+          <img src="img/teams img1.png" alt="">
         </div>
+        <div class="logo-grid-img2">
+          <img src="img/teams img2.png" alt="">
+        </div>
+        <div class="logo-grid-img3">
+          <img src="img/teams img3.png" alt="">
+        </div>
+        <div class="logo-grid-img4">
+          <img src="img/teams img4.png" alt="">
+        </div>
+        <div class="logo-grid-img5">
+          <img src="img/teams img5.png" alt="">
+        </div>
+        <div class="logo-grid-img6">
+          <img src="img/teams img6.png" alt="">
+        </div>
+
+
+      </div>
+      <a href="#" class="view-work">VIEW OUR WORK</a>
+    </div>
+
+    <h1 class="huge-title">OUR WORK</h1>
+  </section>
+
+
+
+
+  <!-- ShoxJahon -->
+  <section class="skills-contact">
+    <div class="container">
+
+      <!-- OUR SKILLS -->
+      <div class="skills-top">
+        <div class="skills-left">
+          <h2>OUR SKILLS</h2>
+
+          <div class="skill-item">
+            <div class="skill-head">
+              <span>GRAPHIC DESIGN</span>
+              <span>80%</span>
+            </div>
+            <div class="skill-line">
+              <div class="skill-fill w-80"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-head">
+              <span>LEAD GENERATION</span>
+              <span>41%</span>
+            </div>
+            <div class="skill-line">
+              <div class="skill-fill w-41"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-head">
+              <span>PHOTOSHOP</span>
+              <span>70%</span>
+            </div>
+            <div class="skill-line">
+              <div class="skill-fill w-70"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-head">
+              <span>ILLUSTRATION</span>
+              <span>100%</span>
+            </div>
+            <div class="skill-line">
+              <div class="skill-fill w-100"></div>
+            </div>
+          </div>
+
+          <p class="skills-note">
+            * Companies we've helped build their website with Görm
+          </p>
+        </div>
+
+        <div class="skills-right">
+          <img src="img/ourskills_img.png" alt="Our Skills Image">
+        </div>
+      </div>
+
+      <!-- FUN FACTS -->
+      <div class="fun-facts">
+        <h3>FUN FACTS</h3>
+
+        <div class="facts-grid">
+          <div class="fact-item">
+            <img src="img/lampochka.png" alt="Lampochka">
+            <div class="fact-text">
+              <h4>10</h4>
+              <p>Years on market</p>
+            </div>
+          </div>
+
+          <div class="fact-item">
+            <img src="img/like.png" alt="Like">
+            <div class="fact-text">
+              <h4>340+</h4>
+              <p>Project done</p>
+            </div>
+          </div>
+
+          <div class="fact-item">
+            <img src="img/odam.png" alt="Odam">
+            <div class="fact-text">
+              <h4>17</h4>
+              <p>Hero's member</p>
+            </div>
+          </div>
+
+          <div class="fact-item">
+            <img src="img/kofe.png" alt="Kofe">
+            <div class="fact-text">
+              <h4>900+</h4>
+              <p>Cups of coffee</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTACT US -->
+      <div class="contact-section">
+        <div class="contact-image">
+          <img src="img/contact_img.png" alt="Contact Image">
+        </div>
+
+        <div class="contact-form-box">
+          <h2>CONTACT US</h2>
+
+          <form class="contact-form">
+            <input type="text" placeholder="Name*">
+            <input type="email" placeholder="Email*">
+            <input type="text" placeholder="Website URL*">
+            <textarea placeholder="Project Details*"></textarea>
+            <button class="btn_contact" type="submit">SEND PROPOSAL</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <title>Görm Dizayn</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  </head>
+
+  <body>
+    <section class="blog-section">
+      <h2 class="section-title">FROM BLOG</h2>
+      <div class="blog-container">
+        <div class="blog-card">
+          <img src="/branding_test/img/blog_img_1.png" alt="Workplace">
+          <div class="card-content">
+            <span class="badge marketing">MARKETING</span>
+            <h3>CURATING A WORKPLACE THAT INSPIRES ALL OF US</h3>
+            <a href="#" class="read-more">READ MORE</a>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img src="/branding_test/img/blog_img_2.png" alt="Designers">
+          <div class="card-content">
+            <span class="badge design">DESIGN</span>
+            <h3>DESIGNERS WHO CHANGED THE WEB WITH WEBFLOW</h3>
+            <a href="#" class="read-more">READ MORE</a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <div class="running-line">
-        <div class="line-content">
-            LET'S TALK — CONTACT US — LET'S TALK — CONTACT US — LET'S TALK — CONTACT US —
-        </div>
+      <div class="line-content">
+        LET'S TALK — CONTACT US — LET'S TALK — CONTACT US — LET'S TALK — CONTACT US —
+      </div>
     </div>
 
     <footer class="footer">
-        <div class="footer-top">
-            <div class="footer-left">
-                <h2 class="footer-logo">GÖRM</h2>
-                <p>Görm is an award UI/UX designs and branding agency <br> based in New York, USA.</p>
-                <nav class="footer-links">
-                    <a href="#">HOME</a>
-                    <a href="#">ABOUT</a>
-                    <a href="#">STYLE GUIDE</a>
-                    <a href="#">LICENSING</a>
-                    <a href="#">INSTRUCTIONS</a>
-                </nav>
-            </div>
-            <div class="footer-right">
-                <div class="socials">
-                    <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
-                    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
-                    <a href="#"><i class="fab fa-dribbble"></i> Dribbble</a>
-                </div>
-                <div class="contacts">
-                    <a href="mailto:HELLO@GORM.COM" class="mail">HELLO@GÖRM.COM</a>
-                    <p class="phone">+1 (004) 214 5700</p>
-                </div>
-            </div>
+      <div class="footer-top">
+        <div class="footer-left">
+          <h2 class="footer-logo">GÖRM</h2>
+          <p>Görm is an award UI/UX designs and branding agency <br> based in New York, USA.</p>
+          <nav class="footer-links">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">STYLE GUIDE</a>
+            <a href="#">LICENSING</a>
+            <a href="#">INSTRUCTIONS</a>
+          </nav>
         </div>
-        <div class="footer-bottom">
-            <p>© This is a Deni Bozo template powered by Webflow</p>
+        <div class="footer-right">
+          <div class="socials">
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="#"><i class="fab fa-dribbble"></i> Dribbble</a>
+          </div>
+          <div class="contacts">
+            <a href="mailto:HELLO@GORM.COM" class="mail">HELLO@GÖRM.COM</a>
+            <p class="phone">+1 (004) 214 5700</p>
+          </div>
         </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© This is a Deni Bozo template powered by Webflow</p>
+      </div>
     </footer>
-</body>
+
+    
+    <script src="script.js"></script>
+  </body>
+
 </html>
