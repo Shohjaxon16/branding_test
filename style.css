@@ -1,6 +1,5 @@
 * {
-skills
-  margin: 0;
+  skills margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -217,6 +216,7 @@ body {
 
 /* RESPONSIVE */
 @media (max-width: 992px) {
+
   .skills-top,
   .contact-section {
     flex-direction: column;
@@ -266,141 +266,742 @@ body {
   .fact-text p {
     font-size: 15px;
   }
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 body {
-    background-color: #000;
-    color: #fff;
+  background-color: #000;
+  color: #fff;
 }
 
 /* --- Blog Section --- */
 .blog-section {
-    padding: 80px 10%;
-    text-align: center;
+  padding: 80px 10%;
+  text-align: center;
 }
 
 .section-title {
-    font-size: 48px;
-    margin-bottom: 50px;
-    letter-spacing: 2px;
+  font-size: 48px;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
 }
 
 .blog-container {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }
 
 .blog-card {
-    background: #111319;
-    width: 450px;
-    text-align: left;
+  background: #111319;
+  width: 450px;
+  text-align: left;
 }
 
 .blog-card img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 
 .card-content {
-    padding: 25px;
+  padding: 25px;
 }
 
 .badge {
-    display: inline-block;
-    padding: 5px 10px;
-    font-size: 10px;
-    margin-bottom: 15px;
-    color: #fff;
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 10px;
+  margin-bottom: 15px;
+  color: #fff;
 }
 
-.marketing { background: #ff69b4; }
-.design { background: #ff4d4d; }
+.marketing {
+  background: #ff69b4;
+}
+
+.design {
+  background: #ff4d4d;
+}
 
 .blog-card h3 {
-    font-size: 20px;
-    line-height: 1.4;
-    margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 20px;
 }
 
 .read-more {
-    color: #fff;
-    text-decoration: none;
-    font-size: 12px;
-    border-bottom: 1px solid #555;
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  border-bottom: 1px solid #555;
 }
 
 /* --- Yuguruvchi qizil satr --- */
 .running-line {
-    background-color: #d11a11;
-    overflow: hidden;
-    white-space: nowrap;
-    padding: 20px 0;
+  background-color: #d11a11;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 20px 0;
 }
 
 .line-content {
-    display: inline-block;
-    font-size: 40px;
-    font-weight: bold;
-    animation: scroll 20s linear infinite;
+  display: inline-block;
+  font-size: 40px;
+  font-weight: bold;
+  animation: scroll 20s linear infinite;
 }
 
 @keyframes scroll {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 /* --- Footer --- */
 .footer {
-    padding: 60px 10% 20px;
+  padding: 60px 10% 20px;
 }
 
 .footer-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
 }
 
-.footer-logo { font-size: 24px; margin-bottom: 20px; }
+.footer-logo {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
 
-.footer-left p { color: #888; font-size: 14px; margin-bottom: 30px; }
+.footer-left p {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
 
 .footer-links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 11px;
-    margin-right: 15px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 11px;
+  margin-right: 15px;
 }
 
-.footer-right { text-align: right; }
+.footer-right {
+  text-align: right;
+}
 
 .socials a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 12px;
-    margin-left: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  margin-left: 20px;
 }
 
 .mail {
-    display: block;
-    font-size: 20px;
-    margin: 30px 0 5px;
-    text-decoration: none;
-    color: #fff;
+  display: block;
+  font-size: 20px;
+  margin: 30px 0 5px;
+  text-decoration: none;
+  color: #fff;
 }
 
-.phone { color: #888; }
+.phone {
+  color: #888;
+}
 
 .footer-bottom {
-    font-size: 12px;
-    color: #444;
-    border-top: 1px solid #222;
-    padding-top: 20px;
-main
+  font-size: 12px;
+  color: #444;
+  border-top: 1px solid #222;
+  padding-top: 20px;
+  main
+}
+
+
+/* Azamat */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
+  /* Gorizontal scrollning oldini olish */
+  line-height: 1.6;
+}
+
+/* --- 1-QISM: HEADER VA HERO --- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #222;
+  position: fixed;
+  /* Header ekranning tepasida qolishi uchun */
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Biroz shaffof fon */
+  z-index: 100;
+}
+
+.nav-left {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.logo {
+  color: #ff1a1a;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.info-text {
+  font-size: 11px;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  color: #FFFFFFCC;
+  text-transform: uppercase;
+}
+
+.nav-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  align-items: center;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-left: 40px;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cart span {
+  background-color: #C6100F;
+  color: #fff;
+  padding: 3px 7px;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.contact-btn {
+  background-color: #C6100F;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+  background-color: #e60000;
+}
+
+/* --- MOBIL MENYU --- */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  /* Dastlab yashirin */
+  width: 100%;
+  height: 100%;
+  background: #111;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.5s ease-in-out;
+}
+
+.mobile-menu.active {
+  right: 0;
+}
+
+.mobile-menu nav {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+}
+
+.mobile-menu nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.close-menu {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+/* --- HERO SECTION --- */
+.hero-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+  position: relative;
+  padding-top: 100px;
+  /* Header balandligi uchun joy */
+}
+
+.hero-title {
+  font-size: 130px;
+  /* Katta sarlavha */
+  font-weight: 400;
+  line-height: 0.9;
+  letter-spacing: -3px;
+  text-transform: uppercase;
+}
+
+/* Vertikal Ijtimoiy Tarmoqlar */
+.social-sidebar {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  z-index: 10;
+}
+
+.social-sidebar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  transform: rotate(90deg);
+  /* 90 gradusga burish */
+  transform-origin: left center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.social-sidebar a:hover {
+  opacity: 1;
+}
+
+/* Scroll Ikonkasi */
+.scroll-icon {
+  position: absolute;
+  bottom: 40px;
+  left: 80px;
+}
+
+.mouse {
+  width: 20px;
+  height: 35px;
+  border: 2px solid #555;
+  border-radius: 10px;
+  position: relative;
+}
+
+.mouse::before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 8px;
+  border-radius: 50%;
+}
+
+/* "Next" O'qi */
+.next-arrow {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  background: #1a1a1a;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.next-arrow:hover {
+  background-color: #333;
+}
+
+/* --- 2-QISM: ABOUT VA WORK --- */
+.about-section {
+  padding: 100px 80px;
+  background-color: #000;
+}
+
+/* Rasmlar Panjarasi */
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  position: relative;
+  margin-bottom: 100px;
+  align-items: start;
+}
+
+.img-container img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  /* Rasmni joyga moslashtirish */
+}
+
+.right-img {
+  margin-top: 50px;
+  /* Rasmdagi kabi bir oz pastroq offset */
+}
+
+/* Aylanuvchi "Play Showreel" Tugmasi */
+.play-showreel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  background: #ff1a1a;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.play-showreel:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+  /* Kattalashish effekti */
+}
+
+.play-showreel svg {
+  width: 100%;
+  height: 100%;
+  animation: rotateText 10s linear infinite;
+  /* Doimiy aylanish */
+}
+
+.play-showreel text {
+  fill: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+@keyframes rotateText {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.play-icon {
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+}
+
+/* Matnli Content */
+.content-split {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  margin-bottom: 150px;
+}
+
+.section-title {
+  font-size: 80px;
+  line-height: 0.9;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.description p {
+  color: #FFFFFFCC;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+.team-btn {
+  background: #ff1a1a;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-weight: 400;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+
+.team-btn:hover {
+  background-color: #e60000;
+}
+
+/* Logotiplar Qismi */
+.partners-section {
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+.partners-title {
+  color: #FFFFFF;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 60px;
+  opacity: 0.8;
+}
+
+.logo-grid-img1 img {
+  width: 130px;
+  height: 53px;
+}
+
+.logo-grid-img2 img {
+  width: 45px;
+  height: 54px;
+}
+
+.logo-grid-img3 img {
+  width: 120px;
+  height: 13px;
+}
+
+.logo-grid-img4 img {
+  width: 105px;
+  height: 26px;
+}
+
+.logo-grid-img5 img {
+  width: 135px;
+  height: 61px;
+}
+
+.logo-grid-img6 img {
+  width: 100px;
+  height: 24px;
+}
+
+.logo-item {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.logo-item:hover {
+  opacity: 1;
+}
+
+.view-work {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Katta Pastki Sarlavha */
+.huge-title {
+  font-size: 130px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 100px;
+  font-weight: 400;
+  letter-spacing: -6px;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+/* --- RESPONSIVLIK SOZLAMALARI (MEDIA QUERIES) --- */
+
+/* Katta planshetlar va noutbuklar uchun (max-width: 1200px) */
+@media (max-width: 1200px) {
+  .hero-title {
+    font-size: 100px;
+  }
+
+  .huge-title {
+    font-size: 140px;
+  }
+
+  .section-title {
+    font-size: 60px;
+  }
+
+  .hero-section,
+  .about-section {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .scroll-icon {
+    left: 40px;
+  }
+}
+
+/* Planshetlar va mobil qurilmalar uchun (max-width: 992px) */
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 80px;
+  }
+
+  .content-split {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .logo-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px 30px;
+  }
+
+  .img-container img {
+    height: 400px;
+  }
+}
+
+/* Kichik mobil qurilmalar uchun (max-width: 768px) */
+@media (max-width: 768px) {
+  header {
+    padding: 15px 20px;
+  }
+
+  .nav-right {
+    padding-left: 10px;
+    gap: 15px;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+
+  /* Mobil qurilmada ortiqcha elementlarni yashirish */
+
+  .hero-section {
+    padding-top: 120px;
+    align-items: flex-start;
+  }
+
+  .hero-title {
+    font-size: 50px;
+    line-height: 1.1;
+  }
+
+  .image-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .right-img {
+    margin-top: 0;
+  }
+
+  .img-container img {
+    height: 300px;
+  }
+
+  .play-showreel {
+    width: 100px;
+    height: 100px;
+  }
+
+  .play-showreel text {
+    font-size: 8px;
+  }
+
+  .section-title {
+    font-size: 40px;
+  }
+
+  .description p {
+    font-size: 16px;
+  }
+
+  .huge-title {
+    font-size: 60px;
+    letter-spacing: -2px;
+  }
+
+  .logo-item {
+    font-size: 22px;
+  }
 }
