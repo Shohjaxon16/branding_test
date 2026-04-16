@@ -1,15 +1,310 @@
+/* ============================================================
+   GÖRM STUDIO — CSS
+   Sections: Our Work · We Build Experiences · Testimonials
+   ============================================================ */
+
+/* ---- CSS Variables ---- */
+:root {
+  --color-black: #0a0a0a;
+  --color-dark: #111111;
+  --color-card-dark: #1a1a1a;
+  --color-red: #e63329;
+  --color-white: #ffffff;
+  --color-gray: #888888;
+  --color-light-gray: #cccccc;
+
+  --color-purple: #4a2d8f;
+  --color-orange: #c85a1a;
+  --color-blue: #2d4fa8;
+
+  --font-heading: 'Arial Black', 'Impact', sans-serif;
+  --font-body: 'Arial', sans-serif;
+
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 32px;
+  --spacing-lg: 64px;
+  --spacing-xl: 96px;
+
+  --border-radius-card: 4px;
+  --transition-fast: 0.2s ease;
+  --transition-med: 0.35s ease;
+}
+
+/* ---- Reset & Base ---- */
+*,
+*::before,
+*::after,
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  background-color: #000;
-  font-family: Arial, sans-serif;
-  color: #fff;
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
 }
 
+body {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ============================================================
+   OUR WORK SECTION
+   ============================================================ */
+.our-work {
+  background-color: var(--color-black);
+}
+
+/* ---- Portfolio showcase — bitta yaxlit rasm ---- */
+.our-work__portfolio-image-wrap {
+  width: 100%;
+  line-height: 0;
+}
+
+.our-work__portfolio-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* ---- All Projects Footer ---- */
+.our-work__footer {
+  background-color: var(--color-red);
+  text-align: center;
+  padding: 12px var(--spacing-sm);
+}
+
+.our-work__all-link {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-white);
+  transition: opacity var(--transition-fast);
+}
+
+.our-work__all-link:hover {
+  opacity: 0.75;
+}
+
+/* ============================================================
+   WE BUILD EXPERIENCES SECTION
+   ============================================================ */
+.experiences {
+  background-color: var(--color-dark);
+  padding: var(--spacing-xl) var(--spacing-lg);
+}
+
+.experiences__container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.experiences__header {
+  margin-bottom: var(--spacing-lg);
+}
+
+.experiences__title {
+  font-family: var(--font-heading);
+  font-size: clamp(32px, 5vw, 60px);
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  line-height: 1.05;
+  color: var(--color-white);
+  text-transform: uppercase;
+  margin-bottom: var(--spacing-lg);
+}
+
+.experiences__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-sm);
+}
+
+.service-card {
+  background-color: var(--color-card-dark);
+  border-radius: var(--border-radius-card);
+  padding: var(--spacing-md) var(--spacing-sm);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-sm);
+  transition: transform var(--transition-med), box-shadow var(--transition-med);
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+}
+
+.service-card__icon-wrap {
+  width: 52px;
+  height: 52px;
+  background-color: var(--color-red);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.service-card__icon {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+.service-card__title {
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  color: var(--color-white);
+  text-transform: uppercase;
+}
+
+.service-card__desc {
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--color-gray);
+  max-width: 180px;
+}
+
+/* ============================================================
+   TESTIMONIALS SECTION
+   ============================================================ */
+.testimonials {
+  background-color: var(--color-dark);
+  padding: var(--spacing-xl) var(--spacing-lg);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.testimonials__container {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.testimonials__title {
+  font-family: var(--font-heading);
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  color: var(--color-white);
+  text-transform: uppercase;
+  margin-bottom: var(--spacing-lg);
+}
+
+.testimonials__slider {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.testimonial-item__avatar-wrap {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--color-red);
+  flex-shrink: 0;
+}
+
+.testimonial-item__avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-item__quote {
+  font-size: clamp(13px, 2vw, 16px);
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.6;
+  color: var(--color-white);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  max-width: 480px;
+}
+
+.testimonial-item__name {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--color-white);
+  text-transform: uppercase;
+  margin-top: var(--spacing-xs);
+}
+
+.testimonial-item__role {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  color: var(--color-gray);
+  text-transform: uppercase;
+}
+
+.testimonials__dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: var(--spacing-md);
+}
+
+.testimonials__dot {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.25);
+  border: none;
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.testimonials__dot--active {
+  background-color: var(--color-white);
+  transform: scale(1.2);
+}
+
+.testimonials__dot:hover:not(.testimonials__dot--active) {
+  background-color: rgba(255, 255, 255, 0.55);
+}
+
+/* ============================================================
+   SKILLS / CONTACT
+   ============================================================ */
 .skills-contact {
   background: #000;
   padding: 80px 0 100px;
@@ -21,7 +316,6 @@ body {
   margin: 0 auto;
 }
 
-/* SKILLS TOP */
 .skills-top {
   display: flex;
   justify-content: space-between;
@@ -74,21 +368,10 @@ body {
   background: #ff1a1a;
 }
 
-.w-80 {
-  width: 80%;
-}
-
-.w-41 {
-  width: 41%;
-}
-
-.w-70 {
-  width: 70%;
-}
-
-.w-100 {
-  width: 100%;
-}
+.w-80 { width: 80%; }
+.w-41 { width: 41%; }
+.w-70 { width: 70%; }
+.w-100 { width: 100%; }
 
 .skills-note {
   margin-top: 14px;
@@ -107,7 +390,6 @@ body {
   object-fit: cover;
 }
 
-/* FUN FACTS */
 .fun-facts {
   padding: 110px 0 110px;
   text-align: center;
@@ -150,7 +432,6 @@ body {
   color: #d0d0d0;
 }
 
-/* CONTACT SECTION */
 .contact-section {
   display: flex;
   align-items: flex-start;
@@ -212,69 +493,9 @@ body {
   border-radius: 4px;
 }
 
-
-
-/* RESPONSIVE */
-@media (max-width: 992px) {
-
-  .skills-top,
-  .contact-section {
-    flex-direction: column;
-  }
-
-  .skills-left,
-  .skills-right,
-  .contact-image,
-  .contact-form-box {
-    width: 100%;
-  }
-
-  .skills-left h2,
-  .contact-form-box h2 {
-    font-size: 48px;
-  }
-
-  .facts-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 576px) {
-  .skills-contact {
-    padding: 50px 0 70px;
-  }
-
-  .skills-left h2,
-  .contact-form-box h2 {
-    font-size: 36px;
-    margin-bottom: 35px;
-  }
-
-  .fun-facts h3 {
-    font-size: 32px;
-  }
-
-  .facts-grid {
-    grid-template-columns: 1fr;
-    gap: 22px;
-  }
-
-  .fact-text h4 {
-    font-size: 34px;
-  }
-
-  .fact-text p {
-    font-size: 15px;
-    margin: 0;
-  }
-}
-
-body {
-  background-color: #000;
-  color: #fff;
-}
-
-/* --- Blog Section --- */
+/* ============================================================
+   BLOG / FOOTER
+   ============================================================ */
 .blog-section {
   padding: 80px 10%;
   text-align: center;
@@ -337,7 +558,6 @@ body {
   border-bottom: 1px solid #555;
 }
 
-/* --- Yuguruvchi qizil satr --- */
 .running-line {
   background-color: #d11a11;
   overflow: hidden;
@@ -352,18 +572,15 @@ body {
   animation: scroll 20s linear infinite;
 }
 
-
 @keyframes scroll {
   from {
     transform: translateX(0);
   }
-
   to {
     transform: translateX(-50%);
   }
 }
 
-/* --- Footer --- */
 .footer {
   padding: 60px 10% 20px;
 }
@@ -421,27 +638,13 @@ body {
   color: #444;
   border-top: 1px solid #222;
   padding-top: 20px;
-  main
 }
 
 /* Azamat */
-
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-}
-
-body {
-  background-color: #000;
-  color: #fff;
-  overflow-x: hidden;
-  /* Gorizontal scrollning oldini olish */
-  line-height: 1.6;
 }
 
 /* --- 1-QISM: HEADER VA HERO --- */
@@ -452,11 +655,9 @@ header {
   padding: 20px 40px;
   border-bottom: 1px solid #222;
   position: fixed;
-  /* Header ekranning tepasida qolishi uchun */
   top: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.9);
-  /* Biroz shaffof fon */
   z-index: 100;
 }
 
@@ -546,7 +747,6 @@ header {
   position: fixed;
   top: 0;
   right: -100%;
-  /* Dastlab yashirin */
   width: 100%;
   height: 100%;
   background: #111;
@@ -592,19 +792,16 @@ header {
   padding-left: 80px;
   position: relative;
   padding-top: 100px;
-  /* Header balandligi uchun joy */
 }
 
 .hero-title {
   font-size: 130px;
-  /* Katta sarlavha */
   font-weight: 400;
   line-height: 0.9;
   letter-spacing: -3px;
   text-transform: uppercase;
 }
 
-/* Vertikal Ijtimoiy Tarmoqlar */
 .social-sidebar {
   position: absolute;
   right: 40px;
@@ -621,7 +818,6 @@ header {
   text-decoration: none;
   font-size: 12px;
   transform: rotate(90deg);
-  /* 90 gradusga burish */
   transform-origin: left center;
   display: flex;
   align-items: center;
@@ -635,7 +831,6 @@ header {
   opacity: 1;
 }
 
-/* Scroll Ikonkasi */
 .scroll-icon {
   position: absolute;
   bottom: 40px;
@@ -662,7 +857,6 @@ header {
   border-radius: 50%;
 }
 
-/* "Next" O'qi */
 .next-arrow {
   position: absolute;
   bottom: 40px;
@@ -688,7 +882,6 @@ header {
   background-color: #000;
 }
 
-/* Rasmlar Panjarasi */
 .image-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -702,15 +895,12 @@ header {
   width: 100%;
   height: 500px;
   object-fit: cover;
-  /* Rasmni joyga moslashtirish */
 }
 
 .right-img {
   margin-top: 50px;
-  /* Rasmdagi kabi bir oz pastroq offset */
 }
 
-/* Aylanuvchi "Play Showreel" Tugmasi */
 .play-showreel {
   position: absolute;
   top: 50%;
@@ -730,14 +920,12 @@ header {
 
 .play-showreel:hover {
   transform: translate(-50%, -50%) scale(1.1);
-  /* Kattalashish effekti */
 }
 
 .play-showreel svg {
   width: 100%;
   height: 100%;
   animation: rotateText 10s linear infinite;
-  /* Doimiy aylanish */
 }
 
 .play-showreel text {
@@ -752,7 +940,6 @@ header {
   from {
     transform: rotate(0deg);
   }
-
   to {
     transform: rotate(360deg);
   }
@@ -764,19 +951,11 @@ header {
   font-size: 20px;
 }
 
-/* Matnli Content */
 .content-split {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
   gap: 60px;
   margin-bottom: 150px;
-}
-
-.section-title {
-  font-size: 80px;
-  line-height: 0.9;
-  font-weight: 400;
-  text-transform: uppercase;
 }
 
 .description p {
@@ -802,7 +981,6 @@ header {
   background-color: #e60000;
 }
 
-/* Logotiplar Qismi */
 .partners-section {
   text-align: center;
   margin-bottom: 150px;
@@ -824,35 +1002,12 @@ header {
   opacity: 0.8;
 }
 
-.logo-grid-img1 img {
-  width: 130px;
-  height: 53px;
-}
-
-.logo-grid-img2 img {
-  width: 45px;
-  height: 54px;
-}
-
-.logo-grid-img3 img {
-  width: 120px;
-  height: 13px;
-}
-
-.logo-grid-img4 img {
-  width: 105px;
-  height: 26px;
-}
-
-.logo-grid-img5 img {
-  width: 135px;
-  height: 61px;
-}
-
-.logo-grid-img6 img {
-  width: 100px;
-  height: 24px;
-}
+.logo-grid-img1 img { width: 130px; height: 53px; }
+.logo-grid-img2 img { width: 45px; height: 54px; }
+.logo-grid-img3 img { width: 120px; height: 13px; }
+.logo-grid-img4 img { width: 105px; height: 26px; }
+.logo-grid-img5 img { width: 135px; height: 61px; }
+.logo-grid-img6 img { width: 100px; height: 24px; }
 
 .logo-item {
   font-size: 28px;
@@ -875,7 +1030,6 @@ header {
   letter-spacing: 1px;
 }
 
-/* Katta Pastki Sarlavha */
 .huge-title {
   font-size: 130px;
   color: #ffffff;
@@ -887,35 +1041,31 @@ header {
   line-height: 1;
 }
 
-/* --- RESPONSIVLIK SOZLAMALARI (MEDIA QUERIES) --- */
-
-/* Katta planshetlar va noutbuklar uchun (max-width: 1200px) */
-@media (max-width: 1200px) {
-  .hero-title {
-    font-size: 100px;
-  }
-
-  .huge-title {
-    font-size: 140px;
-  }
-
-  .section-title {
-    font-size: 60px;
-  }
-
-  .hero-section,
-  .about-section {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
-  .scroll-icon {
-    left: 40px;
-  }
-}
-
-/* Planshetlar va mobil qurilmalar uchun (max-width: 992px) */
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
 @media (max-width: 992px) {
+  .skills-top,
+  .contact-section {
+    flex-direction: column;
+  }
+
+  .skills-left,
+  .skills-right,
+  .contact-image,
+  .contact-form-box {
+    width: 100%;
+  }
+
+  .skills-left h2,
+  .contact-form-box h2 {
+    font-size: 48px;
+  }
+
+  .facts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .hero-title {
     font-size: 80px;
   }
@@ -935,7 +1085,29 @@ header {
   }
 }
 
-/* Kichik mobil qurilmalar uchun (max-width: 768px) */
+@media (max-width: 900px) {
+  .our-work__portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-card {
+    min-height: 280px;
+  }
+
+  .experiences__cards {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+
+  .experiences {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+
+  .testimonials {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+}
+
 @media (max-width: 768px) {
   header {
     padding: 15px 20px;
@@ -997,5 +1169,78 @@ header {
 
   .logo-item {
     font-size: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .portfolio-card--purple {
+    padding: var(--spacing-sm);
+  }
+
+  .portfolio-card__planet-wrapper {
+    width: 110px;
+    height: 110px;
+  }
+
+  .portfolio-card__planet-name {
+    font-size: 18px;
+  }
+
+  .experiences {
+    padding: 48px var(--spacing-sm);
+  }
+
+  .experiences__title {
+    font-size: 28px;
+  }
+
+  .experiences__cards {
+    max-width: 100%;
+  }
+
+  .service-card {
+    padding: var(--spacing-sm);
+  }
+
+  .testimonials {
+    padding: 48px var(--spacing-sm);
+  }
+
+  .testimonials__title {
+    font-size: 26px;
+  }
+
+  .testimonial-item__quote {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+  .skills-contact {
+    padding: 50px 0 70px;
+  }
+
+  .skills-left h2,
+  .contact-form-box h2 {
+    font-size: 36px;
+    margin-bottom: 35px;
+  }
+
+  .fun-facts h3 {
+    font-size: 32px;
+  }
+
+  .facts-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .fact-text h4 {
+    font-size: 34px;
+  }
+
+  .fact-text p {
+    font-size: 15px;
+    margin: 0;
   }
 }
